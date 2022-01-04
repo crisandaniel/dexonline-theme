@@ -1,6 +1,38 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 youtube_shortcode {
     max-width: 50%; 
 }
+
 .highlight {
-    max-width: 50%;
+    max-width: 90%;
+}
+
+code {
+    background-color: rgb(227, 230, 232);;
+    padding: 2px 4px;
+}
+
+nav, footer {   
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav > a {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
