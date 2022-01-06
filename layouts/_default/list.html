@@ -5,11 +5,13 @@
 {{ range .Pages.ByPublishDate }}
 
 <p>
-    <h3>
+    <ul>
+        <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{- partial "metadata.html" . -}}
-        <hr>
-    </h3>
+        </li>
+    </ul>
 </p>
 {{ end }}
+> list.html <
 {{ end }}
