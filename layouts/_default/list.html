@@ -1,5 +1,9 @@
 {{ define "main" }}
+{{ . }}
+
 <h1>{{ .Title }}</h1>
+{{ .Summary }}
+
 {{ .Content }}
 
 {{ range .Pages.ByPublishDate }}
@@ -13,5 +17,4 @@
     </ul>
 </p>
 {{ end }}
-> list.html <
 {{ end }}

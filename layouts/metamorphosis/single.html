@@ -2,7 +2,8 @@
 {{ . }}
 
 <h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
+{{- partial "metadata.html" . -}}
+- {{ .Params.author }}
 <hr>
 {{ .Content }}
 

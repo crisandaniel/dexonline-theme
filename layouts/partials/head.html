@@ -4,7 +4,13 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/syntax.css">
     <meta name="author" content="{{ .Site.Params.author }}">
-    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="description" content="
+        {{- with .Page.Description -}}
+            {{ . }}
+        {{- else -}}
+            {{ .Site.Params.description }}
+        {{- end -}}
+        ">
     {{ template "_internal/google_analytics_async.html" . }}
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}
